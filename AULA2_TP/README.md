@@ -45,10 +45,11 @@ eyJhbGciOiAiUlMyNTYifQ.eyJvYmplY3QiOiBbIjYtMzgwZGVlMzRmZjQxMGQ2ZGIwMmVkYTlmMTZiM
 Component: 7
 eyJhbGciOiAiUlMyNTYifQ.eyJvYmplY3QiOiBbIjctZmUzNWE0NTAyYzUyYjU5MTlkNjI3Y2MzNjZlYTgzMzBiNmE1NGVjZDY1YjhhNWVjZTJlNjE4YjQ4MTYzYmMzMWQwMjEyMDNlMmZjODEyY2YxYTkwYTMyZDQ5N2RjMTY3IiwgIjEiLCA1LCA4LCAiMjA2NWRlMjg4ZDAyZGY1NGVkN2JjZjAzZTdjYzJiMDA5YTFlY2E0MjliOTcwMDI4ZTgxODgxMjNlMWRjY2ZhNyJdfQ.LnNTPr6VbFfa7JWMiFBJto4fbfonFqq8y2DDpno_VED1FyqK1oN33CcoyUPC7khdSMsvmDpWegzdnFCMk1ailf3PiVNIcvFANdf6p5iLyGtdm8F_QLg2TfyZGOUrFLYqaF6uPQqYzBvrbU_NeGVTSQE8xVSiVIU0ZyiecZO_UT0
 Component: 8
-eyJhbGciOiAiUlMyNTYifQ.eyJvYmplY3QiOiBbIjgtYjdhMmQ0NGRjNTkxM2ZjMzQ2YTEwZGMwM2FhMWM1NDc2YjVlNjNiYTZjNjBkMmI0MjczZDRkYzAwYTZjYTU2NmM0OGI5ZDA0NDUzMjlmYWU4MWYyM2NmZjU0MTlmMWUzIiwgIjEiLCA1LCA4LCAiYzM0YWU2YmUwOTkwMTZhYzUzZTJiNmFmY2RhMTIyNTlkZDU3NGM2MGVkNzY2MDVlMmU1Y2M3MTFiYjdmOWExNyJdfQ.FqNd3sl1REBeXfeBZ1rDhq0uGYaQFZRVtQXkUQzJWA-EcDQbYigP-b-fJ_ObI-uwCPgCU8w3c3SjabxTLbjU-f5MsC95C--kBdjr2WoxO-G_SfTsa7vVtoH6QX83C8jtYWXO84XWVvPpl6hND5puKyCuywVhYwCgTkwHTzznYu4```
-
+eyJhbGciOiAiUlMyNTYifQ.eyJvYmplY3QiOiBbIjgtYjdhMmQ0NGRjNTkxM2ZjMzQ2YTEwZGMwM2FhMWM1NDc2YjVlNjNiYTZjNjBkMmI0MjczZDRkYzAwYTZjYTU2NmM0OGI5ZDA0NDUzMjlmYWU4MWYyM2NmZjU0MTlmMWUzIiwgIjEiLCA1LCA4LCAiYzM0YWU2YmUwOTkwMTZhYzUzZTJiNmFmY2RhMTIyNTlkZDU3NGM2MGVkNzY2MDVlMmU1Y2M3MTFiYjdmOWExNyJdfQ.FqNd3sl1REBeXfeBZ1rDhq0uGYaQFZRVtQXkUQzJWA-EcDQbYigP-b-fJ_ObI-uwCPgCU8w3c3SjabxTLbjU-f5MsC95C--kBdjr2WoxO-G_SfTsa7vVtoH6QX83C8jtYWXO84XWVvPpl6hND5puKyCuywVhYwCgTkwHTzznYu4
+```
 B\. A principal diferença entre os dois programas é o número de componentes necessárias para recuperar o segredo. No caso do programa *recoverSecretFromComponents-app.py* são necessárias 5 componentes(quorom) para podermos obter o segredo, já no caso do programa *recoverSecretFromAllComponents-app.py* são necessárias todas as componentes(8) para podermos obter o segredo. Se dermos menos componentes do que as necessárias os programas não revelam o segredo.<br>
 O programa *recoverSecretFromAllComponents-app.py* pode ser usado quando o nivel de criticidade do segredo é bastante elevado, o outro programa pode ser usado para segredos não tão criticos.
+
 
 ## Pergunta P3.1
 
@@ -68,8 +69,8 @@ def Decifra(ciphertext,etiqueta,datakey(do tipo ano.mes.dia),mac):
       mensagem = decifra(ciphertext,datakey)
     else:
       print("ERROR: Authentication Failed")
-    return mensagem```
-
+    return mensagem
+```
 
 ## Pergunta P4.1
 
