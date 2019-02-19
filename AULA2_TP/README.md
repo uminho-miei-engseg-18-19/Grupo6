@@ -67,9 +67,9 @@ def Decifra(ciphertext,etiqueta,datakey(do tipo ano.mes.dia),mac):
     key=raw_input()
     if(hmac(key,ciphertext+etiqueta)==mac):
       mensagem = decifra(ciphertext,datakey)
+      return mensagem
     else:
       print("ERROR: Authentication Failed")
-    return mensagem
 ```
 
 ## Pergunta P4.1
