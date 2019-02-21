@@ -6,7 +6,7 @@ from eVotUM.Cripto import eccblind
 
 
 def printUsage():
-    print("Usage: python generateBlindSignature-app.py private-key.pem")
+    print("Usage: python blindSignature-app.py -key <chave privada> -bmsg <blind message>")
 
 def parseArgs():
     if (len(sys.argv)!=5):
