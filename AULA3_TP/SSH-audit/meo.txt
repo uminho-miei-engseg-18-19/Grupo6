@@ -1,0 +1,43 @@
+# general
+(gen) banner: SSH-2.0-dropbear_2016.74
+(gen) software: Dropbear SSH 2016.74
+(gen) compatibility: OpenSSH 3.9-6.6, Dropbear SSH 2013.57+
+(gen) compression: disabled
+
+# key exchange algorithms
+(kex) diffie-hellman-group14-sha1  -- [warn] using weak hashing algorithm
+                                   `- [info] available since OpenSSH 3.9, Dropbear SSH 0.53
+(kex) diffie-hellman-group1-sha1   -- [fail] removed (in server) since OpenSSH 6.7, unsafe algorithm
+                                   `- [fail] disabled (in client) since OpenSSH 7.0, logjam attack
+                                   `- [warn] using small 1024-bit modulus
+                                   `- [warn] using weak hashing algorithm
+                                   `- [info] available since OpenSSH 2.3.0, Dropbear SSH 0.28
+(kex) kexguess2@matt.ucc.asn.au    -- [info] available since Dropbear SSH 2013.57
+
+# host-key algorithms
+(key) ssh-rsa                      -- [info] available since OpenSSH 2.5.0, Dropbear SSH 0.28
+
+# encryption algorithms (ciphers)
+(enc) aes128-ctr                   -- [info] available since OpenSSH 3.7, Dropbear SSH 0.52
+(enc) aes256-ctr                   -- [info] available since OpenSSH 3.7, Dropbear SSH 0.52
+
+# message authentication code algorithms
+(mac) hmac-sha1                    -- [warn] using encrypt-and-MAC mode
+                                   `- [warn] using weak hashing algorithm
+                                   `- [info] available since OpenSSH 2.1.0, Dropbear SSH 0.28
+(mac) hmac-md5                     -- [fail] removed (in server) since OpenSSH 6.7, unsafe algorithm
+                                   `- [warn] disabled (in client) since OpenSSH 7.2, legacy algorithm
+                                   `- [warn] using encrypt-and-MAC mode
+                                   `- [warn] using weak hashing algorithm
+                                   `- [info] available since OpenSSH 2.1.0, Dropbear SSH 0.28
+
+# algorithm recommendations (for Dropbear SSH 2016.74)
+(rec) -diffie-hellman-group1-sha1  -- kex algorithm to remove 
+(rec) -diffie-hellman-group14-sha1 -- kex algorithm to remove 
+(rec) +diffie-hellman-group14-sha256-- kex algorithm to append 
+(rec) +curve25519-sha256@libssh.org-- kex algorithm to append 
+(rec) +diffie-hellman-group16-sha512-- kex algorithm to append 
+(rec) +3des-ctr                    -- enc algorithm to append 
+(rec) +twofish128-ctr              -- enc algorithm to append 
+(rec) +twofish256-ctr              -- enc algorithm to append 
+(rec) -hmac-md5                    -- mac algorithm to remove 
