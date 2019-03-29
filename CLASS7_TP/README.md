@@ -1,6 +1,6 @@
 ## Question 1.1
 
-###The Data Security Principle 
+### The Data Security Principle 
 
 To protect data, the data security principle requires the implementation of the appropriate technical or organisational measures when processing personal data.
 When implementing such measures the controller and the processor should take into account requirements, the cost of implementation and the circumstances of processing, as well as the risks. Some of the measures could include, for example, pseudonymising and encryptyng personal data.<br/>
