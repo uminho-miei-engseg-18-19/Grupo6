@@ -66,10 +66,10 @@ The processing of this data satisfies the following criteria: <br/>
 - Sensitive data or data of highly personal nature, considering that we collect user's preferences, we have in our possession data that may be of personal nature regarding the user.
 
 ### 3.
-See document [/DPAI/ICOdpia-template.pdf].
+[See document](DPAI/ICOdpia-template.pdf).
 
 
 ## Question 1.4 
 
-[See document][/DPAI/PIA-Privacy-Impact-Assessment.pdf]
+[See document](DPAI/PIA-Privacy-Impact-Assessment.pdf)
 
