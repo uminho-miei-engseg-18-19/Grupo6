@@ -13,30 +13,30 @@ Some of this bugs are vulnerabilities but there is no way to predict how many vu
 ## Question 1.2
 
 ### Project Vulnerabilities 
-1. Argument Injection or Modification
+1. Argument Injection or Modification<br\>
 This means the software does not sufficiently delimit the arguments being passed to a component in another control sphere, allowing alternate arguments to be provided, leading to potentially security-relevant changes.<br\>
 This vulnerabilities are easly mitigated by understanding all the potential areas where untrusted inputs can enter the software and performing input validation at well-defined interfaces.
 
-2. Information Exposure
+2. Information Exposure<br\>
 More specifically the intentional or unintentional disclosure of information to an actor that is not explicitly authorized to have access to that information.<br\>
 This kind of vulnerability is also simply solved by compartmentalizing the system properly, taking into account where trust boundaries can be unambigously drawn, not allowing sensitive data to go outside of the trust boundary and always be careful when interfacing with a compartment outside the safe area. 
 
 ### Codification vulnerabilities 
-1. Compiler Removal of Code to Clear Buffers 
+1. Compiler Removal of Code to Clear Buffers <br\>
 Precisely sensitive memory is cleard according to the source code, but compiler optimizations leave the memory untouched when it is not read again, that is to say "dead sotre removal"<br\>
 This vulnerabilities can be mitigated by storing the sensitive data in a "volatile" memory location if available or if possible by configuring the compiler so that it does not remove dead sotres.
 
-2. External Control of System or Configuration Setting
+2. External Control of System or Configuration Setting<br\>
 Meaning allowing external control of system settings, which can disrupt service or cause an application to behave unexpectedly, and in a pottencially malicious way.
 This occurs when an attacker can control values that govern the behaviour of the system. <br\>
 A possible way to solve this problem is to not allow user-provided or otherwise untrusted data to control sensitive values. 
 
 ### Operational vulnerabilities
-1. Argument Injection or Modification
+1. Argument Injection or Modification<br\>
 Specifically the software does not delimit the arguments being passed to a component in another control sphere, allowing alternate arguments to be provided, leading to potentially security-relevant changes.<br\>
 A conceivable way to mitigate this problem is using automated static analysis tools that target this kind of vulnerabilities, or using dynamic tools and techniques that interact with the software using large test suites with many diverse inputs.
 
-2. Download of Code Without Integrity Check
+2. Download of Code Without Integrity Check<br\>
 Precisely the product downloads source code or an executable from a remote location and executes the code without sufficently verifying the origin and integrity of the code.<br\>
 Possible way to prevent this vulnerability is running the code using the lowest possible privileges to perform the necessary tasks.
 
