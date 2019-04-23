@@ -20,4 +20,4 @@ Concerning Security Requirements the team is satisfied although it can be improv
 Regarding the first two practices we want to acheive at least the same maturity as the later.
 
 
-[See document](SAMM/SAMM_Assessment_Toolbox_v1.5_FINAL.xlxs)
+[See document](SAMM/SAMM_Assessment_Toolbox_v1.5_FINAL.xlsx)
