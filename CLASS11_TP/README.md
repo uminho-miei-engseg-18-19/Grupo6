@@ -36,7 +36,7 @@ In this specific case, when we write something bigger than 4 (size of buffer), i
 
 0-Simple.c, like RootExploit.c, uses gets. To exploit the vulnerability in this program we have to write input greater than 64, and consequently changing variable control and the program outpus the message YOU WIN.
 
-![](img/P13_3.png)
+![](img/P13_2.png)
 
 ## Question 1.4
 The ReadOverflow.c program, takes a size and a string as an argument and writes size first elements of the string.
