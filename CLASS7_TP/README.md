@@ -43,7 +43,7 @@ The nine criteria are the following:
 	Type of processing used to observe, monitor or control data subjects, including data collected through networks. This kind of monitoring is something to be cautious because the personal data may be collected without the awareness of the data subjects. Making them without knowing who is collecting the data and what they will do with it.<br/>
 
 4. __Sensitive data or data of highly personal nature__
-	This concerns to the personal data that, depending where are you from, may be more sensitive like your political or relisious ideology.<br/>
+	This concerns to the personal data that, depending where are you from, may be more sensitive like your political or religious ideology.<br/>
 
 5. __Data processed on a large scale__
 	The *GDPR* does not define what is large-scale, but the WP29 recommends that factors, like the number of data subjects and the volume and time of processing of the data  , be considered when determining whether the processing is taken on a large-scale or not.<br/>	
@@ -59,10 +59,17 @@ The nine criteria are the following:
 
 9. This last criteria includes processing operations that aims at allowing, modifying or refusing data subjects access to a service or entry into a contract.<br/>  		
  
-### 2 and 3 TODO
+### 2.
+The project is a streaming application for movies and series. The kind of information that will be processed is usernames, passwords, e-mails, payment information, user's preferences and data collected from user's choices. <br/>
+The processing of this data satisfies the following criteria: <br/>
+- Evaluation or scoring as well as Systematic monitoring, since we collect data from user's preferences and choices to predict what they may like, so we can present to them in the future;
+- Sensitive data or data of highly personal nature, considering that we collect user's preferences, we have in our possession data that may be of personal nature regarding the user.
+
+### 3.
+[See document](DPIA/ICOdpia-template.pdf).
 
 
-## Question 1.4 TODO
+## Question 1.4 
 
-
+[See document](DPIA/PIA-Privacy-Impact-Assessment.pdf)
 
